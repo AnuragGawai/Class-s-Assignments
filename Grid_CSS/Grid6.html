@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid5</title>
+
+<style>
+    body{
+        display:grid;
+        grid-template-areas:
+         "__1 __1 __1 __1"
+         "__2 __3 __4 __5"
+         "__2 __6 __7 __5"
+         "__2 __6 __8 __9"
+         
+         ;
+         grid-template-columns:20% 40% 20% 20% ;
+         grid-template-rows: 50% 1fr 60px 60px ;
+         grid-gap: 10px;
+         height: 100vh;
+         margin: 0;
+
+    }
+div{
+    padding: 20px;
+    background-color: rgb(49, 87, 255);
+    font-size: large;
+    
+}
+
+#_1{grid-area:__1;}
+#_2{grid-area:__2;}
+#_3{grid-area:__3;}
+#_4{grid-area:__4;}
+#_5{grid-area:__5;}
+#_6{grid-area:__6;}
+#_7{grid-area:__7;}
+#_8{grid-area:__8;}
+#_9{grid-area:__9;}
+
+</style>
+</head>
+<body>
+    <div id="_1">1</div>
+    <div id="_2">2</div>
+    <div id="_3">3</div>
+    <div id="_4">4</div>
+    <div id="_5">5</div>
+    <div id="_6">6</div>
+    <div id="_7">7</div>
+    <div id="_8">8</div>
+    <div id="_9">9</div>
+    
+    
+</body>
+</html>

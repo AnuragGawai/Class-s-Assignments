@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid2</title>
+
+<style>
+    body{
+        display:grid;
+        grid-template-areas:
+         "Header Header Header Header"
+         "Article Article Nav Ads"
+         "Footer Footer Footer Footer";
+         grid-template-columns:20% 40% 20% 20% ;
+         grid-template-rows: 60px 1fr 60px;
+         grid-gap: 10px;
+         height: 100vh;
+         margin: 0;
+
+    }
+Header,footer,article,nav,div{
+    padding: 20px;
+    background-color: rgb(49, 87, 255);
+    
+}
+
+#pageHeader{ grid-area: Header;}
+#pageFooter{grid-area: Footer;}
+#mainArticle{grid-area: Article;}
+#mainNav{grid-area: Nav;}
+#sideAds{grid-area: Ads;}
+   
+
+</style>
+</head>
+<body>
+    <header id="pageHeader">Header</header>
+    <article id="mainArticle">Article</article>
+    <nav id="mainNav">Nav</nav>
+    <div id="sideAds">Ads</div>
+    <footer id="pageFooter">Footer</footer>
+    
+</body>
+</html>
